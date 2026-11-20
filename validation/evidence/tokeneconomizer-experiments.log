@@ -1,0 +1,120 @@
+bringing up nodes...
+bringing up nodes...
+
+..........................F.................................F......................................................F......ss.........s.................. [ 38%]
+...............................................FFF...................................................................................................... [ 76%]
+..........F............................FF.................F..................................                                                            [100%]
+========================================================================== FAILURES ===========================================================================
+___________________________________________ test_the_swebench_container_is_handed_the_key_by_name_and_nothing_else ____________________________________________
+[gw0] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_agent_credentials.py:59: in test_the_swebench_container_is_handed_the_key_by_name_and_nothing_else
+    with open("/dev/null", "w") as fh:
+         ^^^^^^^^^^^^^^^^^^^^^^
+E   FileNotFoundError: [Errno 2] No such file or directory: '/dev/null'
+______________________________________________ test_the_codex_lane_runs_the_whole_evaluated_workload_by_default _______________________________________________
+[gw3] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_sweep_arms.py:557: in test_the_codex_lane_runs_the_whole_evaluated_workload_by_default
+    assert planned == set(workloads.task_counts(domain)), (domain, planned)
+E   AssertionError: ('swebench', set())
+E   assert set() == {'django/djan...'sympy/sympy'}
+E     
+E     Extra items in the right set:
+E     'matplotlib/matplotlib'
+E     'scikit-learn/scikit-learn'
+E     'sympy/sympy'
+E     'pydata/xarray'
+E     'sphinx-doc/sphinx'
+E     'django/django'
+E     Use -v to get more diff
+__________________________________________________________ test_rtk_cache_dir_requires_configuration __________________________________________________________
+[gw0] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_baselines.py:386: in test_rtk_cache_dir_requires_configuration
+    assert rtk_mod.cache_dir() == "/somewhere/scaffolds"
+E   AssertionError: assert '/somewhere\\scaffolds' == '/somewhere/scaffolds'
+E     
+E     - /somewhere/scaffolds
+E     ?           ^
+E     + /somewhere\scaffolds
+E     ?           ^
+_____________________________________________________________ test_a_report_reads_the_budget_back _____________________________________________________________
+[gw0] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_fleet_budget.py:57: in test_a_report_reads_the_budget_back
+    _tree(tmp_path)
+experiments\tests\test_fleet_budget.py:24: in _tree
+    uid = os.getuid()
+          ^^^^^^^^^
+E   AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?
+______________________________________________________________ test_zero_leaves_the_cgroup_alone ______________________________________________________________
+[gw0] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_fleet_budget.py:66: in test_zero_leaves_the_cgroup_alone
+    base = _tree(tmp_path)
+           ^^^^^^^^^^^^^^^
+experiments\tests\test_fleet_budget.py:24: in _tree
+    uid = os.getuid()
+          ^^^^^^^^^
+E   AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?
+_________________________________________________ test_an_unwritable_cgroup_warns_and_never_fails_the_launch __________________________________________________
+[gw0] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_fleet_budget.py:75: in test_an_unwritable_cgroup_warns_and_never_fails_the_launch
+    _tree(tmp_path, writable=False)
+experiments\tests\test_fleet_budget.py:24: in _tree
+    uid = os.getuid()
+          ^^^^^^^^^
+E   AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?
+_____________________________________________________ test_webbench_refuses_a_scaffold_it_cannot_install ______________________________________________________
+[gw3] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_runner_registry.py:105: in test_webbench_refuses_a_scaffold_it_cannot_install
+    webbench.make_runner(agent="claude", scaffold=bad)
+experiments\te_harness\webbench.py:2377: in make_runner
+    _install_signal_cleanup()
+experiments\te_harness\webbench.py:160: in _install_signal_cleanup
+    for sig in (signal.SIGTERM, signal.SIGINT, signal.SIGHUP):
+                                               ^^^^^^^^^^^^^
+E   AttributeError: module 'signal' has no attribute 'SIGHUP'
+_________________________________________________ test_the_cap_lands_on_the_cgroup_the_container_scopes_share _________________________________________________
+[gw3] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_fleet_budget.py:39: in test_the_cap_lands_on_the_cgroup_the_container_scopes_share
+    base = _tree(tmp_path)
+           ^^^^^^^^^^^^^^^
+experiments\tests\test_fleet_budget.py:24: in _tree
+    uid = os.getuid()
+          ^^^^^^^^^
+E   AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?
+____________________________________________ test_the_canonical_path_is_the_fallback_when_no_container_is_running _____________________________________________
+[gw3] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_fleet_budget.py:50: in test_the_canonical_path_is_the_fallback_when_no_container_is_running
+    base = _tree(tmp_path, scope=False)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+experiments\tests\test_fleet_budget.py:24: in _tree
+    uid = os.getuid()
+          ^^^^^^^^^
+E   AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?
+___________________________________________________ test_the_contract_names_host_paths_not_container_paths ____________________________________________________
+[gw3] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+experiments\tests\test_codex_webbench.py:193: in test_the_contract_names_host_paths_not_container_paths
+    assert f'model_instructions_file = "{home}/instructions.md"' in cfg
+E   assert 'model_instructions_file = "<CODEX_WORKSPACE>\\tx20\\popen-gw3\\test_the_contract_names_host_p0\\.codex-home/instructions.md"' in 'model = "gpt-5.6-terra"\nmodel_provider = "openai_direct"\nmodel_reasoning_effort = "high"\nmodel_instructions_file =...\\Documents\\\\Codex\\\\tx20\\\\popen-gw3\\\\test_the_contract_names_host_p0\\\\workspace"]\ntrust_level = "trusted"\n'
+===================================================================== slowest 8 durations =====================================================================
+11.45s call     experiments/tests/test_codex_routing.py::test_bundled_system_skills_are_read_from_the_installed_cli
+2.79s call     experiments/tests/test_model_spelling.py::test_model_for_agent_never_changes_the_tree_tag
+2.41s call     experiments/tests/test_model_spelling.py::test_copilot_model_check_switches_to_the_cli_spelling
+2.25s call     experiments/tests/test_codex_routing.py::test_config_toml_writes_an_mcp_server_table_the_cli_validates
+2.01s call     experiments/tests/test_codex_routing.py::test_claude_model_tags_are_unchanged
+1.67s call     experiments/tests/test_model_spelling.py::test_copilot_model_check_refuses_when_neither_spelling_serves
+1.33s call     experiments/tests/test_model_spelling.py::test_copilot_model_check_refuses_a_byok_404
+1.31s call     experiments/tests/test_tooling.py::test_net_guard_blocks_end_to_end_on_a_copilot_shaped_payload
+=================================================================== short test summary info ===================================================================
+FAILED experiments/tests/test_agent_credentials.py::test_the_swebench_container_is_handed_the_key_by_name_and_nothing_else - FileNotFoundError: [Errno 2] No ...
+FAILED experiments/tests/test_sweep_arms.py::test_the_codex_lane_runs_the_whole_evaluated_workload_by_default - AssertionError: ('swebench', set())
+FAILED experiments/tests/test_baselines.py::test_rtk_cache_dir_requires_configuration - AssertionError: assert '/somewhere\\scaffolds' == '/somewhere/scaffolds'
+FAILED experiments/tests/test_fleet_budget.py::test_a_report_reads_the_budget_back - AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'ge...
+FAILED experiments/tests/test_fleet_budget.py::test_zero_leaves_the_cgroup_alone - AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getp...
+FAILED experiments/tests/test_fleet_budget.py::test_an_unwritable_cgroup_warns_and_never_fails_the_launch - AttributeError: module 'os' has no attribute 'get...
+FAILED experiments/tests/test_runner_registry.py::test_webbench_refuses_a_scaffold_it_cannot_install - AttributeError: module 'signal' has no attribute 'SIGHUP'
+FAILED experiments/tests/test_fleet_budget.py::test_the_cap_lands_on_the_cgroup_the_container_scopes_share - AttributeError: module 'os' has no attribute 'ge...
+FAILED experiments/tests/test_fleet_budget.py::test_the_canonical_path_is_the_fallback_when_no_container_is_running - AttributeError: module 'os' has no attr...
+FAILED experiments/tests/test_codex_webbench.py::test_the_contract_names_host_paths_not_container_paths - assert 'model_instructions_file = "C:\\Users\\Windo...
+SKIPPED [1] experiments\tests\test_codex_routing.py:396: needs /proc
+SKIPPED [1] experiments\tests\test_codex_routing.py:410: needs /proc
+SKIPPED [1] experiments\tests\test_baselines.py:507: could not import 'aider.repomap': No module named 'aider'
+10 failed, 384 passed, 3 skipped in 20.30s

@@ -1,0 +1,65 @@
+bringing up nodes...
+bringing up nodes...
+
+.................................................................................................................s...................................... [ 10%]
+........................................................................................................................................................ [ 20%]
+..............................................................................ss.s...................................................................... [ 31%]
+...............sss.ssss.ssss............................................................................................................................ [ 41%]
+........................................................................................................................................................ [ 52%]
+..................................................................................................................................s..................... [ 62%]
+.............................................sssss..sss.........................................................s......s.sssss.......................... [ 73%]
+........................................................................................................................................................ [ 83%]
+.....................................................................................................................................................s.. [ 94%]
+.........s.....sssss.s........sss................................s.................                                                                      [100%]
+==================================================================== slowest 10 durations =====================================================================
+90.03s setup    tests/test_grok.py::test_the_start_context_reaches_the_model_once_with_the_first_tool_result
+35.97s call     tests/test_plugin_package.py::test_powershell_slash_commands_without_git_bash[Restricted-C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+33.63s call     tests/test_plugin_package.py::test_powershell_slash_commands_without_git_bash[Restricted-<USERPROFILE>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE]
+28.96s call     tests/test_plugin_package.py::test_powershell_slash_commands_without_git_bash[None-<USERPROFILE>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE]
+24.95s call     tests/test_plugin_package.py::test_copilot_and_vscode_plugin_copies_find_the_core
+24.35s call     tests/test_plugin_package.py::test_windows_hook_skips_old_python_but_honors_explicit_choice[C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+23.76s call     tests/test_plugin_package.py::test_powershell_slash_commands_without_git_bash[None-C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+23.33s call     tests/test_plugin_package.py::test_native_powershell_arguments_exit_code_and_aliases_under_restricted[C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+12.89s call     tests/test_plugin_package.py::test_native_powershell_arguments_exit_code_and_aliases_under_restricted[<USERPROFILE>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE]
+12.57s call     tests/test_plugin_package.py::test_windows_hook_skips_old_python_but_honors_explicit_choice[<USERPROFILE>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE]
+=================================================================== short test summary info ===================================================================
+SKIPPED [1] tests\test_antigravity.py:163: POSIX permission bits: Windows keeps the state private by ACL
+SKIPPED [1] tests\test_codex_cli.py:65: drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)
+SKIPPED [1] tests\test_codex_cli.py:144: drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)
+SKIPPED [1] tests\test_codex_cli.py:197: drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)
+SKIPPED [1] tests\test_opencode_plugin.py:133: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:143: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:151: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:167: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:184: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:195: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:228: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:243: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:258: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:385: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:396: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_live_core.py:1499: the probe trap is made of sh scripts
+SKIPPED [1] tests\test_live_repos.py:680: root writes through read-only permissions; Windows ignores chmod on directories
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_settings_dire0\\outside' -> '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_settings_dire0\\repo\\.claude'
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_settings_dire1\\outside' -> '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_settings_dire1\\repo\\.github'
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_settings_dire2\\outside' -> '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_settings_dire2\\repo\\.codex'
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_settings_file0\\elsewhere.json' -> '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_settings_file0\\repo\\.claude\\settings.local.json'
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_exclude_file_0\\victim' -> '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_a_symlinked_exclude_file_0\\repo\\.git\\info\\exclude'
+SKIPPED [1] tests\test_live_safety.py:85: POSIX permission bits: Windows keeps a profile private by ACL
+SKIPPED [1] tests\test_live_safety.py:96: POSIX permission bits: Windows keeps a profile private by ACL
+SKIPPED [1] tests\test_hermes_plugin.py:1100: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\outputs\\AI本地验证-2026-11-20\\TokenEconomizer\\plugin\\hermes' -> '<CODEX_WORKSPACE>\\t20\\popen-gw0\\test_the_plugin_finds_its_laun0\\tokeneconomizer'
+SKIPPED [1] tests\test_hermes_plugin.py:1339: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1357: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1370: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1383: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1411: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1425: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_plugin_package.py:739: checkout without symlinks (Windows): see the known_marketplaces test
+SKIPPED [1] tests\test_plugin_package.py:795: symlinks need privileges on Windows
+SKIPPED [5] tests\test_live_repomap.py:27: the stand-in Python is an sh script, which Windows cannot start
+SKIPPED [1] tests\test_live_repomap.py:112: aider is not installed
+SKIPPED [1] tests\test_plugin_package.py:442: the POSIX launcher path
+SKIPPED [1] tests\test_plugin_package.py:454: the POSIX launcher path
+SKIPPED [1] tests\test_plugin_package.py:465: the POSIX launcher path
+SKIPPED [1] tests\test_plugin_package.py:426: the POSIX launcher path
+1408 passed, 43 skipped in 200.35s (0:03:20)

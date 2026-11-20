@@ -1,0 +1,10 @@
+{
+  "upstream_zip_missing_license": true,
+  "upstream_runtime_modified": false,
+  "derived_zip": "tokeneconomizer-plugin-with-license.zip",
+  "modifications": [
+    "Add unchanged upstream MIT LICENSE",
+    "Add provenance notice"
+  ],
+  "no_live_install": true
+}

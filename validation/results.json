@@ -1,0 +1,567 @@
+{
+  "validated_at": "2026-11-20T16:23:53.674490+08:00",
+  "upstream": "microsoft/TokenEconomizer",
+  "upstream_commit": "1bfeccdcecf48333b22762ad1dd9e36c6dc065df",
+  "environment": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.5",
+    "cpu_only": true,
+    "upstream_pinned_torch": "2.9.1+cpu",
+    "pytest": "9.0.3",
+    "yaml": "6.0.3"
+  },
+  "tests": {
+    "token_initial": {
+      "tests": 1451,
+      "passed": 1379,
+      "failed": 29,
+      "errors": 0,
+      "skipped": 43,
+      "failures": [
+        {
+          "test": "tests.test_history_import::test_the_first_session_start_reads_the_repositorys_history_once_oldest_first",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_the_first_session_start_r0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-the-first-session-start-r0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_history_import_off_reads_nothing_and_the_newest_are_kept",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_history_import_off_reads_0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-history-import-off-reads-0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_by_default_a_session_start_reads_no_history_and_an_import_by_hand_does",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_by_default_a_session_star0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-by-default-a-session-star0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_moved_checkouts_logs_are_matched_by_their_exact_folder",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_moved_checkouts_logs_ar0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-moved-checkouts-logs-ar0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_unsafe_session_ids_are_never_used",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_unsafe_session_ids_are_ne0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-unsafe-session-ids-are-ne0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_repository_with_folded_sessions_records_the_skip_and_a_manual_import_refuses",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_repository_with_folded_0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-repository-with-folded-0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_session_that_ends_during_the_import_is_folded_after_it",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_session_that_ends_durin0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-session-that-ends-durin0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_run_stopped_by_its_budget_resumes_the_same_plan_in_order",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_run_stopped_by_its_budg0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-run-stopped-by-its-budg0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_dead_import_is_restarted_by_the_next_session_start",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_dead_import_is_restarte0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-dead-import-is-restarte0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_an_import_that_fails_stops_blocking_live_folds",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_an_import_that_fails_stop0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-an-import-that-fails-stop0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_an_import_waits_for_a_live_fold_already_under_way",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_an_import_waits_for_a_liv0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-an-import-waits-for-a-liv0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_what_a_plan_leaves_out",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_what_a_plan_leaves_out0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-what-a-plan-leaves-out0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_folded_means_a_session_record_not_a_charge",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_folded_means_a_session_re0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-folded-means-a-session-re0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_session_whose_fold_fails_is_skipped_and_the_rest_imported",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_session_whose_fold_fail0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-session-whose-fold-fail0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_session_the_import_dies_on_is_left_out_after_two_tries",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_session_the_import_dies0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-session-the-import-dies0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_session_folded_just_before_the_import_died_counts_as_imported",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_session_folded_just_bef0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-session-folded-just-bef0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_te_history_import_resumes_a_plan_that_was_stopped",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_te_history_import_resumes0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-te-history-import-resumes0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_imported_sessions_are_scored_against_their_own_tools",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_imported_sessions_are_sco0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-imported-sessions-are-sco0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_the_next_live_fold_under_auto_holds_nothing_that_rests_on_history",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_the_next_live_fold_under_0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-the-next-live-fold-under-0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_an_import_calls_no_model_and_keeps_a_waiting_deny_list",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_an_import_calls_no_model_0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-an-import-calls-no-model-0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_an_import_ignores_and_keeps_the_deny_list_in_place",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_an_import_ignores_and_kee0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-an-import-ignores-and-kee0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_the_envelope_is_seeded_from_turns_that_ended_green",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_the_envelope_is_seeded_fr0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-the-envelope-is-seeded-fr0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_imported_sessions_are_counted_apart",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_imported_sessions_are_cou0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-imported-sessions-are-cou0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_merge_carries_imported_sessions_along",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_merge_carries_imported_0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-merge-carries-imported-0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_merge_into_a_repository_that_learned_more_does_not_fold_imported_sessions_again",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_merge_into_a_repository0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-merge-into-a-repository0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_te_history_dry_run_writes_nothing",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_te_history_dry_run_writes0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-te-history-dry-run-writes0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_a_failed_import_by_hand_says_why_and_fails_without_an_unhandled_error",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_a_failed_import_by_hand_s0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-failed-import-by-hand-s0-repo'"
+        },
+        {
+          "test": "tests.test_history_import::test_no_hook_reads_history_on_another_agent",
+          "reason": "FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_no_hook_reads_history_on_0\\\\claude\\\\projects\\\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-no-hook-reads-history-on-0-repo'"
+        },
+        {
+          "test": "tests.test_plugin_package::test_copilot_and_vscode_plugin_copies_find_the_core",
+          "reason": "FileNotFoundError: [WinError 206] 文件名或扩展名太长。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_copilot_and_vscode_plugin0\\\\user\\\\AppData\\\\Roaming\\\\Code\\\\agentPlugins\\\\file-c-3A-Users-test-copilot-installed-plugins-tokeneconomizer-tokeneconomizer\\\\1a1eddd1a4c'"
+        }
+      ],
+      "error_details": [],
+      "skip_details": [
+        {
+          "test": "tests.test_antigravity::test_the_cursor_file_is_private",
+          "reason": "POSIX permission bits: Windows keeps the state private by ACL"
+        },
+        {
+          "test": "tests.test_codex_cli::test_codex_installs_the_plugin_and_its_copy_finds_the_package",
+          "reason": "drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)"
+        },
+        {
+          "test": "tests.test_codex_cli::test_a_codex_session_runs_the_hooks_and_is_learned_from",
+          "reason": "drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)"
+        },
+        {
+          "test": "tests.test_codex_cli::test_a_side_call_hands_codex_its_prompt_as_written",
+          "reason": "drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_an_installed_copy_finds_the_dispatcher_through_te_core_path",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_an_installed_copy_with_a_sibling_scripts_copy_keeps_working",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_scripts_directory_above_the_copy_is_not_an_anchor",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_the_state_launcher_is_read_when_its_target_has_a_space",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_with_no_anchor_the_hooks_fail_open",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_the_plugins_hooks_open_no_console_window",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_quiet_session_is_handed_over_without_a_mode_guess",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_turn_still_open_is_not_handed_over_as_quiet",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_resumed_session_keeps_the_earlier_turns",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_hooks_from_opencodes_background_service_open_no_console_window",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_session_through_the_service_is_folded_with_its_prompt",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_the_plugin_finds_its_launcher_through_a_link",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\\\outputs\\\\AI本地验证-2026-11-20\\\\TokenEconomizer\\\\plugin\\\\hermes' -> '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw1\\\\test_the_plugin_finds_its_laun0\\\\tokeneconomizer'"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_concurrent_repositories_through_a_real_gateway",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_nothing_a_real_session_was_told_is_left_in_the_plugins_state",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_facts_reach_the_system_prompt_of_a_real_session",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_a_failure_loop_gets_a_structured_redirect_from_a_real_side_call",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_a_real_side_call_offers_the_model_no_tool",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_compression_in_a_turn_stays_one_session",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_live_core::test_the_probe_repository_carries_its_trap",
+          "reason": "the probe trap is made of sh scripts"
+        },
+        {
+          "test": "tests.test_live_repos::test_a_change_where_the_state_is_read_only_is_refused_whole",
+          "reason": "root writes through read-only permissions; Windows ignores chmod on directories"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_settings_directory_is_refused[claude-.claude]",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_settings_dire0\\\\outside' -> '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_settings_dire0\\\\repo\\\\.claude'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_settings_directory_is_refused[copilot-.github]",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_settings_dire1\\\\outside' -> '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_settings_dire1\\\\repo\\\\.github'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_settings_directory_is_refused[codex-.codex]",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_settings_dire2\\\\outside' -> '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_settings_dire2\\\\repo\\\\.codex'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_settings_file_is_refused_and_its_target_untouched",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_settings_file0\\\\elsewhere.json' -> '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_settings_file0\\\\repo\\\\.claude\\\\settings.local.json'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_exclude_file_is_not_written_through",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_exclude_file_0\\\\victim' -> '<WORKSPACE>\\\\work\\\\ai-validation\\\\pytest-token-full\\\\popen-gw0\\\\test_a_symlinked_exclude_file_0\\\\repo\\\\.git\\\\info\\\\exclude'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_loose_state_root_is_made_private_and_the_launcher_is_owner_only",
+          "reason": "POSIX permission bits: Windows keeps a profile private by ACL"
+        },
+        {
+          "test": "tests.test_live_safety::test_the_command_line_creates_its_state_private",
+          "reason": "POSIX permission bits: Windows keeps a profile private by ACL"
+        },
+        {
+          "test": "tests.test_plugin_package::test_the_plugin_carries_the_core_as_symlinks_an_install_copy_follows",
+          "reason": "checkout without symlinks (Windows): see the known_marketplaces test"
+        },
+        {
+          "test": "tests.test_plugin_package::test_a_codex_install_copy_finds_the_core_in_the_marketplace_it_came_from",
+          "reason": "symlinks need privileges on Windows"
+        },
+        {
+          "test": "tests.test_live_repomap::test_the_first_prompt_gets_a_map_ranked_toward_what_it_names",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_a_slow_ranked_map_falls_back_to_the_cached_one",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_codex_and_start_mode_get_the_cached_map_at_session_start",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_shadow_and_off_inject_nothing",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_a_named_python_without_aider_is_reported_not_replaced",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_a_real_map_comes_from_tracked_files_and_leaves_the_repository_clean",
+          "reason": "aider is not installed"
+        },
+        {
+          "test": "tests.test_plugin_package::test_the_launcher_skips_a_python3_older_than_the_bootstrap_needs",
+          "reason": "the POSIX launcher path"
+        },
+        {
+          "test": "tests.test_plugin_package::test_with_only_an_old_python_the_launcher_still_hands_it_the_hook",
+          "reason": "the POSIX launcher path"
+        },
+        {
+          "test": "tests.test_plugin_package::test_a_shim_that_runs_no_python_is_passed_over",
+          "reason": "the POSIX launcher path"
+        },
+        {
+          "test": "tests.test_plugin_package::test_te_python_runs_as_named_even_beside_a_newer_python",
+          "reason": "the POSIX launcher path"
+        }
+      ]
+    },
+    "token_final": {
+      "tests": 1451,
+      "passed": 1408,
+      "failed": 0,
+      "errors": 0,
+      "skipped": 43,
+      "failures": [],
+      "error_details": [],
+      "skip_details": [
+        {
+          "test": "tests.test_antigravity::test_the_cursor_file_is_private",
+          "reason": "POSIX permission bits: Windows keeps the state private by ACL"
+        },
+        {
+          "test": "tests.test_codex_cli::test_codex_installs_the_plugin_and_its_copy_finds_the_package",
+          "reason": "drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)"
+        },
+        {
+          "test": "tests.test_codex_cli::test_a_codex_session_runs_the_hooks_and_is_learned_from",
+          "reason": "drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)"
+        },
+        {
+          "test": "tests.test_codex_cli::test_a_side_call_hands_codex_its_prompt_as_written",
+          "reason": "drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_an_installed_copy_finds_the_dispatcher_through_te_core_path",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_an_installed_copy_with_a_sibling_scripts_copy_keeps_working",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_scripts_directory_above_the_copy_is_not_an_anchor",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_the_state_launcher_is_read_when_its_target_has_a_space",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_with_no_anchor_the_hooks_fail_open",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_the_plugins_hooks_open_no_console_window",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_quiet_session_is_handed_over_without_a_mode_guess",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_turn_still_open_is_not_handed_over_as_quiet",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_resumed_session_keeps_the_earlier_turns",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_hooks_from_opencodes_background_service_open_no_console_window",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_opencode_plugin::test_a_session_through_the_service_is_folded_with_its_prompt",
+          "reason": "drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)"
+        },
+        {
+          "test": "tests.test_live_core::test_the_probe_repository_carries_its_trap",
+          "reason": "the probe trap is made of sh scripts"
+        },
+        {
+          "test": "tests.test_live_repos::test_a_change_where_the_state_is_read_only_is_refused_whole",
+          "reason": "root writes through read-only permissions; Windows ignores chmod on directories"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_settings_directory_is_refused[claude-.claude]",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_settings_dire0\\\\outside' -> '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_settings_dire0\\\\repo\\\\.claude'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_settings_directory_is_refused[copilot-.github]",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_settings_dire1\\\\outside' -> '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_settings_dire1\\\\repo\\\\.github'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_settings_directory_is_refused[codex-.codex]",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_settings_dire2\\\\outside' -> '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_settings_dire2\\\\repo\\\\.codex'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_settings_file_is_refused_and_its_target_untouched",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_settings_file0\\\\elsewhere.json' -> '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_settings_file0\\\\repo\\\\.claude\\\\settings.local.json'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_symlinked_exclude_file_is_not_written_through",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_exclude_file_0\\\\victim' -> '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_a_symlinked_exclude_file_0\\\\repo\\\\.git\\\\info\\\\exclude'"
+        },
+        {
+          "test": "tests.test_live_safety::test_a_loose_state_root_is_made_private_and_the_launcher_is_owner_only",
+          "reason": "POSIX permission bits: Windows keeps a profile private by ACL"
+        },
+        {
+          "test": "tests.test_live_safety::test_the_command_line_creates_its_state_private",
+          "reason": "POSIX permission bits: Windows keeps a profile private by ACL"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_the_plugin_finds_its_launcher_through_a_link",
+          "reason": "this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\\\outputs\\\\AI本地验证-2026-11-20\\\\TokenEconomizer\\\\plugin\\\\hermes' -> '<CODEX_WORKSPACE>\\\\t20\\\\popen-gw0\\\\test_the_plugin_finds_its_laun0\\\\tokeneconomizer'"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_concurrent_repositories_through_a_real_gateway",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_nothing_a_real_session_was_told_is_left_in_the_plugins_state",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_facts_reach_the_system_prompt_of_a_real_session",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_a_failure_loop_gets_a_structured_redirect_from_a_real_side_call",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_a_real_side_call_offers_the_model_no_tool",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_hermes_plugin::test_compression_in_a_turn_stays_one_session",
+          "reason": "drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN"
+        },
+        {
+          "test": "tests.test_plugin_package::test_the_plugin_carries_the_core_as_symlinks_an_install_copy_follows",
+          "reason": "checkout without symlinks (Windows): see the known_marketplaces test"
+        },
+        {
+          "test": "tests.test_plugin_package::test_a_codex_install_copy_finds_the_core_in_the_marketplace_it_came_from",
+          "reason": "symlinks need privileges on Windows"
+        },
+        {
+          "test": "tests.test_live_repomap::test_the_first_prompt_gets_a_map_ranked_toward_what_it_names",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_a_slow_ranked_map_falls_back_to_the_cached_one",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_codex_and_start_mode_get_the_cached_map_at_session_start",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_shadow_and_off_inject_nothing",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_a_named_python_without_aider_is_reported_not_replaced",
+          "reason": "the stand-in Python is an sh script, which Windows cannot start"
+        },
+        {
+          "test": "tests.test_live_repomap::test_a_real_map_comes_from_tracked_files_and_leaves_the_repository_clean",
+          "reason": "aider is not installed"
+        },
+        {
+          "test": "tests.test_plugin_package::test_with_only_an_old_python_the_launcher_still_hands_it_the_hook",
+          "reason": "the POSIX launcher path"
+        },
+        {
+          "test": "tests.test_plugin_package::test_a_shim_that_runs_no_python_is_passed_over",
+          "reason": "the POSIX launcher path"
+        },
+        {
+          "test": "tests.test_plugin_package::test_te_python_runs_as_named_even_beside_a_newer_python",
+          "reason": "the POSIX launcher path"
+        },
+        {
+          "test": "tests.test_plugin_package::test_the_launcher_skips_a_python3_older_than_the_bootstrap_needs",
+          "reason": "the POSIX launcher path"
+        }
+      ]
+    },
+    "token_experiments": {
+      "tests": 397,
+      "passed": 384,
+      "failed": 10,
+      "errors": 0,
+      "skipped": 3,
+      "failures": [
+        {
+          "test": "experiments.tests.test_sweep_arms::test_the_codex_lane_runs_the_whole_evaluated_workload_by_default",
+          "reason": "AssertionError: ('swebench', set())\nassert set() == {'django/djan...'sympy/sympy'}\n  \n  Extra items in the right set:\n  'matplotlib/matplotlib'\n  'scikit-learn/scikit-learn'\n  'sympy/sympy'\n  'pydata/xarray'\n  'sphinx-doc/sphinx'\n  'django/django'\n  Use -v to get more diff"
+        },
+        {
+          "test": "experiments.tests.test_agent_credentials::test_the_swebench_container_is_handed_the_key_by_name_and_nothing_else",
+          "reason": "FileNotFoundError: [Errno 2] No such file or directory: '/dev/null'"
+        },
+        {
+          "test": "experiments.tests.test_baselines::test_rtk_cache_dir_requires_configuration",
+          "reason": "AssertionError: assert '/somewhere\\\\scaffolds' == '/somewhere/scaffolds'\n  \n  - /somewhere/scaffolds\n  ?           ^\n  + /somewhere\\scaffolds\n  ?           ^"
+        },
+        {
+          "test": "experiments.tests.test_fleet_budget::test_a_report_reads_the_budget_back",
+          "reason": "AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?"
+        },
+        {
+          "test": "experiments.tests.test_fleet_budget::test_zero_leaves_the_cgroup_alone",
+          "reason": "AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?"
+        },
+        {
+          "test": "experiments.tests.test_fleet_budget::test_an_unwritable_cgroup_warns_and_never_fails_the_launch",
+          "reason": "AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?"
+        },
+        {
+          "test": "experiments.tests.test_runner_registry::test_webbench_refuses_a_scaffold_it_cannot_install",
+          "reason": "AttributeError: module 'signal' has no attribute 'SIGHUP'"
+        },
+        {
+          "test": "experiments.tests.test_fleet_budget::test_the_cap_lands_on_the_cgroup_the_container_scopes_share",
+          "reason": "AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?"
+        },
+        {
+          "test": "experiments.tests.test_fleet_budget::test_the_canonical_path_is_the_fallback_when_no_container_is_running",
+          "reason": "AttributeError: module 'os' has no attribute 'getuid'. Did you mean: 'getpid'?"
+        },
+        {
+          "test": "experiments.tests.test_codex_webbench::test_the_contract_names_host_paths_not_container_paths",
+          "reason": "assert 'model_instructions_file = \"<CODEX_WORKSPACE>\\\\tx20\\\\popen-gw3\\\\test_the_contract_names_host_p0\\\\.codex-home/instructions.md\"' in 'model = \"gpt-5.6-terra\"\\nmodel_provider = \"openai_direct\"\\nmodel_reasoning_effort = \"high\"\\nmodel_instructions_file =...\\\\Documents\\\\\\\\Codex\\\\\\\\tx20\\\\\\\\popen-gw3\\\\\\\\test_the_contract_names_host_p0\\\\\\\\workspace\"]\\ntrust_level = \"trusted\"\\n'"
+        }
+      ],
+      "error_details": [],
+      "skip_details": [
+        {
+          "test": "experiments.tests.test_codex_routing::test_the_skills_probe_kills_the_cli_it_started_not_just_the_shim",
+          "reason": "needs /proc"
+        },
+        {
+          "test": "experiments.tests.test_codex_routing::test_the_config_validator_kills_a_hung_cli_and_its_children",
+          "reason": "needs /proc"
+        },
+        {
+          "test": "experiments.tests.test_baselines::test_repomap_generator_keeps_aiders_console_off_stdout",
+          "reason": "could not import 'aider.repomap': No module named 'aider'"
+        }
+      ]
+    }
+  },
+  "upstream_runtime_source_modified": false,
+  "live_hooks_installed": false,
+  "paid_api_calls": false,
+  "model_or_training_data_downloaded": false,
+  "scope": "Pinned Windows CPU validation; not security audit, production certification, live agent effects or full LLM training."
+}

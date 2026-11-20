@@ -1,0 +1,8 @@
+TokenEconomizer -- ai-validation (claude)
+  repository   <WORKSPACE>\work\ai-validation, identified by its directory (not a git repository)
+  state        <WORKSPACE>\work\ai-validation\sandboxes\tokeneconomizer-installed-status\home\tokeneconomizer\repos\ai-validation-3e09dff230\claude
+  config       microskills=off toolprune=auto loopguard=nudge repomap=off mode=auto shadow=False
+  sessions     0 folded, 0 effective tokens, plugin overhead 0 (0.0%)
+  microskills  0 fact(s) injected at session start (0 sessions learned from)
+  toolprune    0 sessions (0 prompts) observed, catalog: none yet; proposed tools: -; applied: -
+  loopguard    envelope not learned yet (0 ended-green turns); 0 redirect(s), 0 still-stuck notice(s) over 0 turns

@@ -1,0 +1,366 @@
+bringing up nodes...
+bringing up nodes...
+
+........................................................................................................s............................................... [ 10%]
+........................................................................................................................................................ [ 20%]
+.............................................................................................................................................sss........ [ 31%]
+.................................................................................................................sssssssssss............................ [ 41%]
+....................................................................................s.......................ssssssF.FF.FF...FF....FF..F..F....F...F.F... [ 52%]
+F.F..F..F........F...F..F..F.F.F.F.............................F.F.F.................................................................................... [ 62%]
+....................................................s................................................................................................... [ 73%]
+.....sssss..sss......................................................................................................................................... [ 83%]
+...............................................................................................................s.....s..........F....................... [ 94%]
+........................sssss.s.....ssss...........................................                                                                      [100%]
+========================================================================== FAILURES ===========================================================================
+________________________________________ test_the_first_session_start_reads_the_repositorys_history_once_oldest_first _________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:157: in test_the_first_session_start_reads_the_repositorys_history_once_oldest_first
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_the_first_session_start_r0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-the-first-session-start-r0-repo'
+________________________________________________ test_history_import_off_reads_nothing_and_the_newest_are_kept ________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:192: in test_history_import_off_reads_nothing_and_the_newest_are_kept
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_history_import_off_reads_0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-history-import-off-reads-0-repo'
+_________________________________________ test_by_default_a_session_start_reads_no_history_and_an_import_by_hand_does _________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:209: in test_by_default_a_session_start_reads_no_history_and_an_import_by_hand_does
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_by_default_a_session_star0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-by-default-a-session-star0-repo'
+________________________________________________ test_a_moved_checkouts_logs_are_matched_by_their_exact_folder ________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:227: in test_a_moved_checkouts_logs_are_matched_by_their_exact_folder
+    history_log(claude_home, "/gone/old/place/repo", "moved", trap(repo, 1), folder=folder)
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_moved_checkouts_logs_ar0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-moved-checkouts-logs-ar0-repo'
+___________________________________________________________ test_unsafe_session_ids_are_never_used ____________________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:237: in test_unsafe_session_ids_are_never_used
+    history_log(claude_home, repo, bad, trap(repo, 1))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_unsafe_session_ids_are_ne0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-unsafe-session-ids-are-ne0-repo'
+_____________________________________ test_a_repository_with_folded_sessions_records_the_skip_and_a_manual_import_refuses _____________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:258: in test_a_repository_with_folded_sessions_records_the_skip_and_a_manual_import_refuses
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_repository_with_folded_0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-repository-with-folded-0-repo'
+________________________________________________ test_a_session_that_ends_during_the_import_is_folded_after_it ________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:280: in test_a_session_that_ends_during_the_import_is_folded_after_it
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_session_that_ends_durin0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-session-that-ends-durin0-repo'
+_______________________________________________ test_a_run_stopped_by_its_budget_resumes_the_same_plan_in_order _______________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:315: in test_a_run_stopped_by_its_budget_resumes_the_same_plan_in_order
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_run_stopped_by_its_budg0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-run-stopped-by-its-budg0-repo'
+__________________________________________________ test_a_dead_import_is_restarted_by_the_next_session_start __________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:345: in test_a_dead_import_is_restarted_by_the_next_session_start
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_dead_import_is_restarte0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-dead-import-is-restarte0-repo'
+_____________________________________________________ test_an_import_that_fails_stops_blocking_live_folds _____________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:372: in test_an_import_that_fails_stops_blocking_live_folds
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_an_import_that_fails_stop0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-an-import-that-fails-stop0-repo'
+___________________________________________________ test_an_import_waits_for_a_live_fold_already_under_way ____________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:389: in test_an_import_waits_for_a_live_fold_already_under_way
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_an_import_waits_for_a_liv0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-an-import-waits-for-a-liv0-repo'
+_________________________________________________________________ test_what_a_plan_leaves_out _________________________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:435: in test_what_a_plan_leaves_out
+    small = history_log(claude_home, repo, "small", trap(repo, 0), age_s=7200)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_what_a_plan_leaves_out0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-what-a-plan-leaves-out0-repo'
+_______________________________________________________ test_folded_means_a_session_record_not_a_charge _______________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:449: in test_folded_means_a_session_record_not_a_charge
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_folded_means_a_session_re0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-folded-means-a-session-re0-repo'
+______________________________________________ test_a_session_whose_fold_fails_is_skipped_and_the_rest_imported _______________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:470: in test_a_session_whose_fold_fails_is_skipped_and_the_rest_imported
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_session_whose_fold_fail0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-session-whose-fold-fail0-repo'
+________________________________________________ test_a_session_the_import_dies_on_is_left_out_after_two_tries ________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:490: in test_a_session_the_import_dies_on_is_left_out_after_two_tries
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_session_the_import_dies0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-session-the-import-dies0-repo'
+____________________________________________ test_a_session_folded_just_before_the_import_died_counts_as_imported _____________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:514: in test_a_session_folded_just_before_the_import_died_counts_as_imported
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_session_folded_just_bef0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-session-folded-just-bef0-repo'
+___________________________________________________ test_te_history_import_resumes_a_plan_that_was_stopped ____________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:538: in test_te_history_import_resumes_a_plan_that_was_stopped
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_te_history_import_resumes0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-te-history-import-resumes0-repo'
+__________________________________________________ test_imported_sessions_are_scored_against_their_own_tools __________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:560: in test_imported_sessions_are_scored_against_their_own_tools
+    history_log(claude_home, repo, f"old{i}", looked(repo), age_s=3600 * (10 - i),
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_imported_sessions_are_sco0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-imported-sessions-are-sco0-repo'
+___________________________________________ test_the_next_live_fold_under_auto_holds_nothing_that_rests_on_history ____________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:574: in test_the_next_live_fold_under_auto_holds_nothing_that_rests_on_history
+    history_log(claude_home, repo, f"old{i}", looked(repo), age_s=3600 * (10 - i),
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_the_next_live_fold_under_0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-the-next-live-fold-under-0-repo'
+_________________________________________________ test_an_import_calls_no_model_and_keeps_a_waiting_deny_list _________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:611: in test_an_import_calls_no_model_and_keeps_a_waiting_deny_list
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_an_import_calls_no_model_0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-an-import-calls-no-model-0-repo'
+___________________________________________________ test_an_import_ignores_and_keeps_the_deny_list_in_place ___________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:638: in test_an_import_ignores_and_keeps_the_deny_list_in_place
+    history_log(claude_home, repo, f"old{i}", looked(repo), age_s=3600 * (10 - i),
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_an_import_ignores_and_kee0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-an-import-ignores-and-kee0-repo'
+___________________________________________________ test_the_envelope_is_seeded_from_turns_that_ended_green ___________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:649: in test_the_envelope_is_seeded_from_turns_that_ended_green
+    history_log(claude_home, repo, "old0", trap(repo, 0) + looked(repo), age_s=7200)
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_the_envelope_is_seeded_fr0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-the-envelope-is-seeded-fr0-repo'
+__________________________________________________________ test_imported_sessions_are_counted_apart ___________________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:673: in test_imported_sessions_are_counted_apart
+    history_log(claude_home, repo, f"old{i}", trap(repo, i), age_s=3600 * (10 - i))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_imported_sessions_are_cou0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-imported-sessions-are-cou0-repo'
+________________________________________________________ test_a_merge_carries_imported_sessions_along _________________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:694: in test_a_merge_carries_imported_sessions_along
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_merge_carries_imported_0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-merge-carries-imported-0-repo'
+___________________________________ test_a_merge_into_a_repository_that_learned_more_does_not_fold_imported_sessions_again ____________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:714: in test_a_merge_into_a_repository_that_learned_more_does_not_fold_imported_sessions_again
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_merge_into_a_repository0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-merge-into-a-repository0-repo'
+___________________________________________________________ test_te_history_dry_run_writes_nothing ____________________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:795: in test_te_history_dry_run_writes_nothing
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_te_history_dry_run_writes0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-te-history-dry-run-writes0-repo'
+_________________________________________ test_a_failed_import_by_hand_says_why_and_fails_without_an_unhandled_error __________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:813: in test_a_failed_import_by_hand_says_why_and_fails_without_an_unhandled_error
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_a_failed_import_by_hand_s0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-a-failed-import-by-hand-s0-repo'
+_________________________________________________________ test_no_hook_reads_history_on_another_agent _________________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_history_import.py:827: in test_no_hook_reads_history_on_another_agent
+    history_log(claude_home, repo, "old0", trap(repo, 0))
+tests\test_history_import.py:84: in history_log
+    os.makedirs(d, exist_ok=True)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_no_hook_reads_history_on_0\\claude\\projects\\C--Users-Windows-Documents-Codex-2026-11-20-bang-work-ai-validation-pytest-token-full-popen-gw1-test-no-hook-reads-history-on-0-repo'
+_____________________________________________________ test_copilot_and_vscode_plugin_copies_find_the_core _____________________________________________________
+[gw1] win32 -- Python 3.13.5 <WORKSPACE>\work\ai-validation\venvs\offline\Scripts\python.exe
+tests\test_plugin_package.py:972: in test_copilot_and_vscode_plugin_copies_find_the_core
+    vscode_copy = _copy_plugin_with_stub(
+tests\test_plugin_package.py:958: in _copy_plugin_with_stub
+    shutil.copytree(PLUGIN, str(dest), symlinks=True,
+<BASE_PYTHON>\Lib\shutil.py:593: in copytree
+    return _copytree(entries=entries, src=src, dst=dst, symlinks=symlinks,
+<BASE_PYTHON>\Lib\shutil.py:491: in _copytree
+    os.makedirs(dst, exist_ok=dirs_exist_ok)
+<frozen os>:228: in makedirs
+    ???
+E   FileNotFoundError: [WinError 206] 文件名或扩展名太长。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_copilot_and_vscode_plugin0\\user\\AppData\\Roaming\\Code\\agentPlugins\\file-c-3A-Users-test-copilot-installed-plugins-tokeneconomizer-tokeneconomizer\\1a1eddd1a4c'
+==================================================================== slowest 15 durations =====================================================================
+49.11s call     tests/test_plugin_package.py::test_native_powershell_arguments_exit_code_and_aliases_under_restricted[C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+48.86s call     tests/test_plugin_package.py::test_powershell_slash_commands_without_git_bash[Restricted-C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+45.81s call     tests/test_plugin_package.py::test_powershell_slash_commands_without_git_bash[None-C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+43.65s call     tests/test_plugin_package.py::test_powershell_slash_commands_without_git_bash[None-<USERPROFILE>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE]
+31.11s call     tests/test_plugin_package.py::test_windows_hook_skips_old_python_but_honors_explicit_choice[C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+27.63s call     tests/test_plugin_package.py::test_windows_hook_skips_old_python_but_honors_explicit_choice[<USERPROFILE>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE]
+21.07s call     tests/test_plugin_package.py::test_powershell_slash_commands_without_git_bash[Restricted-<USERPROFILE>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE]
+16.64s call     tests/test_plugin_package.py::test_native_powershell_arguments_exit_code_and_aliases_under_restricted[<USERPROFILE>\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.EXE]
+9.76s call     tests/test_plugin_package.py::test_powershell_hook_without_git_bash[None-SessionStart-C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+8.68s call     tests/test_dead_code.py::test_runs_on_this_repository_without_changing_it
+8.33s call     tests/test_live_hooks.py::test_pi_print_mode_counts_as_headless_for_the_stop_hint
+8.00s call     tests/test_plugin_package.py::test_powershell_hook_without_git_bash[Restricted-SessionStart-C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+7.76s call     tests/test_plugin_package.py::test_powershell_hook_without_git_bash[None-UserPromptSubmit-C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+7.31s call     tests/test_plugin_package.py::test_powershell_hook_without_git_bash[Restricted-UserPromptSubmit-C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+6.83s call     tests/test_plugin_package.py::test_powershell_slash_command_reports_cleanly_when_te_json_missing[C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.EXE]
+=================================================================== short test summary info ===================================================================
+FAILED tests/test_history_import.py::test_the_first_session_start_reads_the_repositorys_history_once_oldest_first - FileNotFoundError: [WinError 3] 系统找不...
+FAILED tests/test_history_import.py::test_history_import_off_reads_nothing_and_the_newest_are_kept - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: ...
+FAILED tests/test_history_import.py::test_by_default_a_session_start_reads_no_history_and_an_import_by_hand_does - FileNotFoundError: [WinError 3] 系统找不到...
+FAILED tests/test_history_import.py::test_a_moved_checkouts_logs_are_matched_by_their_exact_folder - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: ...
+FAILED tests/test_history_import.py::test_unsafe_session_ids_are_never_used - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<USERPROFILE>\\Do...
+FAILED tests/test_history_import.py::test_a_repository_with_folded_sessions_records_the_skip_and_a_manual_import_refuses - FileNotFoundError: [WinError 3] 系...
+FAILED tests/test_history_import.py::test_a_session_that_ends_during_the_import_is_folded_after_it - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: ...
+FAILED tests/test_history_import.py::test_a_run_stopped_by_its_budget_resumes_the_same_plan_in_order - FileNotFoundError: [WinError 3] 系统找不到指定的路径。...
+FAILED tests/test_history_import.py::test_a_dead_import_is_restarted_by_the_next_session_start - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\...
+FAILED tests/test_history_import.py::test_an_import_that_fails_stops_blocking_live_folds - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\Users...
+FAILED tests/test_history_import.py::test_an_import_waits_for_a_live_fold_already_under_way - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\Us...
+FAILED tests/test_history_import.py::test_what_a_plan_leaves_out - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<USERPROFILE>\\Documents\\Co...
+FAILED tests/test_history_import.py::test_folded_means_a_session_record_not_a_charge - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\Users\\Wi...
+FAILED tests/test_history_import.py::test_a_session_whose_fold_fails_is_skipped_and_the_rest_imported - FileNotFoundError: [WinError 3] 系统找不到指定的路径...
+FAILED tests/test_history_import.py::test_a_session_the_import_dies_on_is_left_out_after_two_tries - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: ...
+FAILED tests/test_history_import.py::test_a_session_folded_just_before_the_import_died_counts_as_imported - FileNotFoundError: [WinError 3] 系统找不到指定的...
+FAILED tests/test_history_import.py::test_te_history_import_resumes_a_plan_that_was_stopped - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\Us...
+FAILED tests/test_history_import.py::test_imported_sessions_are_scored_against_their_own_tools - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\...
+FAILED tests/test_history_import.py::test_the_next_live_fold_under_auto_holds_nothing_that_rests_on_history - FileNotFoundError: [WinError 3] 系统找不到指定...
+FAILED tests/test_history_import.py::test_an_import_calls_no_model_and_keeps_a_waiting_deny_list - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C...
+FAILED tests/test_history_import.py::test_an_import_ignores_and_keeps_the_deny_list_in_place - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\U...
+FAILED tests/test_history_import.py::test_the_envelope_is_seeded_from_turns_that_ended_green - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\U...
+FAILED tests/test_history_import.py::test_imported_sessions_are_counted_apart - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<USERPROFILE>\\...
+FAILED tests/test_history_import.py::test_a_merge_carries_imported_sessions_along - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\Users\\Windo...
+FAILED tests/test_history_import.py::test_a_merge_into_a_repository_that_learned_more_does_not_fold_imported_sessions_again - FileNotFoundError: [WinError 3]...
+FAILED tests/test_history_import.py::test_te_history_dry_run_writes_nothing - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: '<USERPROFILE>\\Do...
+FAILED tests/test_history_import.py::test_a_failed_import_by_hand_says_why_and_fails_without_an_unhandled_error - FileNotFoundError: [WinError 3] 系统找不到...
+FAILED tests/test_history_import.py::test_no_hook_reads_history_on_another_agent - FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'C:\\Users\\Window...
+FAILED tests/test_plugin_package.py::test_copilot_and_vscode_plugin_copies_find_the_core - FileNotFoundError: [WinError 206] 文件名或扩展名太长。: 'C:\\Users...
+SKIPPED [1] tests\test_antigravity.py:163: POSIX permission bits: Windows keeps the state private by ACL
+SKIPPED [1] tests\test_codex_cli.py:65: drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)
+SKIPPED [1] tests\test_codex_cli.py:144: drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)
+SKIPPED [1] tests\test_codex_cli.py:197: drives a real Codex CLI: set TE_CODEX_E2E=1 with `codex` on PATH (CI's codex job)
+SKIPPED [1] tests\test_opencode_plugin.py:133: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:143: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:151: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:167: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:184: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:195: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:228: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:243: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:258: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:385: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_opencode_plugin.py:396: drives opencode's own runtime: set TE_OPENCODE_E2E=1 and TE_OPENCODE_BIN to the opencode binary (CI's opencode job)
+SKIPPED [1] tests\test_hermes_plugin.py:1100: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\outputs\\AI本地验证-2026-11-20\\TokenEconomizer\\plugin\\hermes' -> '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw1\\test_the_plugin_finds_its_laun0\\tokeneconomizer'
+SKIPPED [1] tests\test_hermes_plugin.py:1339: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1357: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1370: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1383: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1411: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_hermes_plugin.py:1425: drives a real Hermes: set TE_HERMES_E2E=1 and TE_HERMES_BIN
+SKIPPED [1] tests\test_live_core.py:1499: the probe trap is made of sh scripts
+SKIPPED [1] tests\test_live_repos.py:680: root writes through read-only permissions; Windows ignores chmod on directories
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_settings_dire0\\outside' -> '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_settings_dire0\\repo\\.claude'
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_settings_dire1\\outside' -> '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_settings_dire1\\repo\\.github'
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_settings_dire2\\outside' -> '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_settings_dire2\\repo\\.codex'
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_settings_file0\\elsewhere.json' -> '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_settings_file0\\repo\\.claude\\settings.local.json'
+SKIPPED [1] tests\conftest.py:32: this system makes no symlinks: [WinError 1314] 客户端没有所需的特权。: '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_exclude_file_0\\victim' -> '<WORKSPACE>\\work\\ai-validation\\pytest-token-full\\popen-gw0\\test_a_symlinked_exclude_file_0\\repo\\.git\\info\\exclude'
+SKIPPED [1] tests\test_live_safety.py:85: POSIX permission bits: Windows keeps a profile private by ACL
+SKIPPED [1] tests\test_live_safety.py:96: POSIX permission bits: Windows keeps a profile private by ACL
+SKIPPED [1] tests\test_plugin_package.py:739: checkout without symlinks (Windows): see the known_marketplaces test
+SKIPPED [1] tests\test_plugin_package.py:795: symlinks need privileges on Windows
+SKIPPED [5] tests\test_live_repomap.py:27: the stand-in Python is an sh script, which Windows cannot start
+SKIPPED [1] tests\test_live_repomap.py:112: aider is not installed
+SKIPPED [1] tests\test_plugin_package.py:426: the POSIX launcher path
+SKIPPED [1] tests\test_plugin_package.py:442: the POSIX launcher path
+SKIPPED [1] tests\test_plugin_package.py:454: the POSIX launcher path
+SKIPPED [1] tests\test_plugin_package.py:465: the POSIX launcher path
+29 failed, 1379 passed, 43 skipped in 222.65s (0:03:42)

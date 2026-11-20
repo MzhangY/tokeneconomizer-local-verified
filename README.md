@@ -1,3 +1,5 @@
+> **本地验证 Fork（非原创项目）**：见 [中文验证报告](README.zh-CN.md)。保留失败、跳过和未运行项，原作者与许可证不变。
+
 # TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents
 
 <p align="center">
